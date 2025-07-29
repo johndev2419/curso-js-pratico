@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codehotel-login</title>
+    <link rel="stylesheet" href="assets/css/shared/auth.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <!-- link:css  (emmet) -->
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>codehotel</h1>
+        <!-- emmet -->
+        <!-- div.form-group>label{usuário}+input:text#username[name=usernme][required] -->
+        <form id="loginForm" class="login-form" method="post">
+            <div class="form-group">
+                <label for="username">usuário</label>
+                <input type="text" name="username" id="username" required="required">
+            </div>
+            <!-- div.form-group>label{senha}[for=senha]+input:passaword#senha[nome=senha][required] -->
+            <div class="form-group">
+                <label for="senha" form="senha">senha</label>
+                <input type="password" name="senha" id="senha" required="required">
+            </div>
+            <!-- div.form.remember>input:checkbox#lembrar[name=lembra]+label[for=lembrar]{lembrar} -->
+            <div class="form-group remember">
+                <input type="checkbox" name="lembrar" id="lembrar">
+                <label for="lembrar">lembrar</label>
+            </div>
+            <!-- button:submit.btn{entrar}+div.forgot>a[href="esqueceu-senha.html"]{esqueceu a senha?} -->
+            <button type="submit" class="btn">entrar</button>
+
+            <div class="forgot">
+                <a href="esqueceu-senha.html">esqueceu a senha?</a>
+            </div>
+
+
+
+
+
+
+        </form>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
